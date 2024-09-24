@@ -13,12 +13,15 @@ make all
 
 # Compile hello world kernel
 make hello
+./hello
 
 # Compile vector addition
 make vadd
+./vadd
 
 # Compile matrix multiplication
 make mmul
+./mmul
 ```
 ### Cleaning up
 To remove the generated binary files:

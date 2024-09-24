@@ -14,10 +14,11 @@ make all
 
 # Compile 1D stencil computation
 make stc
+./stc
 
 # Compile matrix multiplication with shared memory
 make mmul
-
+./mmul
 ```
 
 Cleaning up
