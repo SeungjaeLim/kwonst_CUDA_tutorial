@@ -23,7 +23,7 @@ build:
 
 run:
 	@echo "Booting up Docker Container"
-	@docker run -it --gpus all --ipc=host --name cu_tutorial -v `pwd`:/workspace cu_tutorial:latest /bin/bash
+	@docker run -it --gpus '"device=1"' --ipc=host --name cu_tutorial -v `pwd`:/workspace cu_tutorial:latest /bin/bash
 
 up: build run
 
