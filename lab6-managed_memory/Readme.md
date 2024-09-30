@@ -1,4 +1,4 @@
-# Lab 6: Managed Memory and GPU Data Porting
+# Lab 6: Managed Memory
 
 This lab explores two main concepts in CUDA programming: linked list data structures and array operations, specifically focusing on manual data copy, Unified Memory (UM), and the benefits of prefetching. You will be implementing and profiling programs using CUDA's Unified Memory (UM) feature to simplify data management between the CPU and GPU.
 

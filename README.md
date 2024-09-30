@@ -7,7 +7,7 @@ This repository contains tutorials and labs for learning CUDA programming, inclu
 - **lab3-grid_stride_loop/**: Contains Lab 3, which demonstrates the use of grid-stride loops to efficiently perform vector addition and maximize GPU resource utilization
 - **lab4-matrix_sums/**: Contains Lab 4, which focuses on calculating row and column sums of a matrix using CUDA, and using Nsight Compute to analyze kernel performance, focusing on memory load requests and transactions.
 - **lab5-reductions/**: Contains Lab 5, which covers advanced CUDA reduction techniques, comparing atomic reduction, parallel reduction with atomic finish, and warp-shuffle reduction.
-
+- **lab6-managed_memory/**: Contains Lab 6, which demonstrates porting linked lists and array operations to the GPU using manual memory management, Unified Memory (UM), and prefetching, with a focus on profiling GPU page faults and memory migrations.
 ## How to Start
 To get started with this CUDA tutorial, follow these steps:
 ```
