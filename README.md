@@ -9,6 +9,7 @@ This repository contains tutorials and labs for learning CUDA programming, inclu
 - **lab5-reductions/**: Contains Lab 5, which covers advanced CUDA reduction techniques, comparing atomic reduction, parallel reduction with atomic finish, and warp-shuffle reduction.
 - **lab6-managed_memory/**: Contains Lab 6, which demonstrates porting linked lists and array operations to the GPU using manual memory management, Unified Memory (UM), and prefetching, with a focus on profiling GPU page faults and memory migrations.
 - **lab7-concurrency/**: Contains Lab 7, which explores concurrency in CUDA programming through three tasks: Gaussian PDF computation on a single GPU, using CUDA streams to overlap computation and memory transfers, and distributing the workload across multiple GPUs.
+- **lab8-optimizing**/: Contains Lab 8, which focuses on optimizing a CUDA matrix transpose operation through three tasks: naive matrix transpose using global memory, shared memory transpose for improved memory coalescing, and shared memory transpose with bank conflict mitigation.
 
 ## How to Start
 To get started with this CUDA tutorial, follow these steps:
