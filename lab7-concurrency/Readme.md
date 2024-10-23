@@ -64,7 +64,7 @@ This will generate a profiling report that can be opened with Nsight Systems. Fo
 
 **Example:** 
 ```
-nsys profile -o profiles/gpdf.qdrep ./gpdf
+nsys profile -o ./gpdf.qdrep ./gpdf
 ```
 
 **Profiling Results**
