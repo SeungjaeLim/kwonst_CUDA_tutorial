@@ -15,15 +15,15 @@ bc: transpose_bc
 
 # Rule for transpose_naive
 transpose_naive: transpose_naive.cu
-	nvcc -o transpose_naive transpose_naive.cu
+	nvcc -O3 -o transpose_naive transpose_naive.cu
 
 # Rule for transpose_sm
 transpose_sm: transpose_sm.cu
-	nvcc -o transpose_sm transpose_sm.cu
+	nvcc -O3 -o transpose_sm transpose_sm.cu
 
 # Rule for transpose_bc
 transpose_bc: transpose_bc.cu
-	nvcc -o transpose_bc transpose_bc.cu
+	nvcc -O3 -o transpose_bc transpose_bc.cu
 
 # Help target
 .PHONY: help

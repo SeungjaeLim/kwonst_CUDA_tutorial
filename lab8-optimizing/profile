@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Check if a filename was provided as an argument
+if [ -z "$1" ]; then
+  echo "Usage: ./profile {filename}"
+  exit 1
+fi
+
+# File to profile
+FILENAME=$1
+
+# Run Nsight Compute profiler with the specified metrics and file
+ncu --metrics \
+l1tex__average_t_sectors_per_request_pipe_lsu_mem_global_op_ld.ratio,\
+l1tex__average_t_sectors_per_request_pipe_lsu_mem_global_op_st.ratio,\
+l1tex__t_requests_pipe_lsu_mem_global_op_ld.sum,\
+l1tex__t_requests_pipe_lsu_mem_global_op_st.sum,\
+l1tex__t_sectors_pipe_lsu_mem_global_op_ld.sum,\
+l1tex__t_sectors_pipe_lsu_mem_global_op_st.sum,\
+smsp__sass_average_data_bytes_per_sector_mem_global_op_ld.pct,\
+smsp__sass_average_data_bytes_per_sector_mem_global_op_st.pct,\
+l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.sum,\
+l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.sum,\
+l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.sum,\
+l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.sum,\
+l1tex__t_bytes_pipe_lsu_mem_global_op_ld.sum.per_second,\
+l1tex__t_bytes_pipe_lsu_mem_global_op_st.sum.per_second,\
+smsp__cycles_active.avg.pct_of_peak_sustained_elapsed \
+./$FILENAME
